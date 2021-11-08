@@ -191,6 +191,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AVFoundation;
 @import CoreGraphics;
 @import CoreMedia;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -232,14 +233,36 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios30CapturaDocumentoViewController")
 @end
 
 
+@protocol CapturarDocumentoViewControllerDelegate;
 
 SWIFT_CLASS("_TtC24brscan_sdk_documento_ios31CapturarDocumentoViewController")
 @interface CapturarDocumentoViewController : UIViewController
+@property (nonatomic, strong) id <CapturarDocumentoViewControllerDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+
+@class DocumentoModel;
+
+SWIFT_PROTOCOL("_TtP24brscan_sdk_documento_ios39CapturarDocumentoViewControllerDelegate_")
+@protocol CapturarDocumentoViewControllerDelegate
+- (void)erro:(NSString * _Nonnull)erro;
+- (void)sucesso:(NSArray<DocumentoModel *> * _Nonnull)documento;
+- (void)luminosidade:(NSString * _Nonnull)erro;
+- (void)cameraNenhuma:(NSString * _Nonnull)erro;
+- (void)cemeraSemPermissao:(NSString * _Nonnull)erro;
+- (void)fecharTelaDeDocumento;
+@end
+
+
+SWIFT_CLASS("_TtC24brscan_sdk_documento_ios14DocumentoModel")
+@interface DocumentoModel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC24brscan_sdk_documento_ios21OvalGraficOverlayView")
