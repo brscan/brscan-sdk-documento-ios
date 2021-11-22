@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/brscan_sdk_documento_ios-Swift.h</key>
 		<data>
-		lxvvAnf4YtEFwQp8RLacs0np5+A=
+		DEILsI8gknm1DeSDmGQdXewJT+U=
 		</data>
 		<key>Headers/brscan_sdk_documento_ios.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		3P/+CrAwnPD6iEbY/r8CQrlJDDU=
+		BiGqBG52BfGE8wA4OuTA8ADKjx8=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		3P/+CrAwnPD6iEbY/r8CQrlJDDU=
+		BiGqBG52BfGE8wA4OuTA8ADKjx8=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1u6K7Wq4INMPdts7GB05gi8RrQ8=
+		Nrv+pIs0ykwNF9UVnB7WTK5VJrA=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -66,59 +66,27 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		1u6K7Wq4INMPdts7GB05gi8RrQ8=
+		Nrv+pIs0ykwNF9UVnB7WTK5VJrA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		wGtmgXeINtkqUNXMHcY8GKzJ29A=
 		</data>
-		<key>Roboto-Black.ttf</key>
-		<data>
-		4oZUwScTFDv91y+MVZxIoZwcvxg=
-		</data>
-		<key>Roboto-BlackItalic.ttf</key>
-		<data>
-		kRWO2IDr9LuQRWjsJG6FoH/vzfs=
-		</data>
 		<key>Roboto-Bold.ttf</key>
 		<data>
 		AT8bvLvYCZGl8A/KUqkNDXq4uB8=
-		</data>
-		<key>Roboto-BoldItalic.ttf</key>
-		<data>
-		QZhRIq4NeGdqwesw7d6JYGvb5TE=
-		</data>
-		<key>Roboto-Italic.ttf</key>
-		<data>
-		IEINtOE9ZUy+IrX7pilseKY2BTc=
 		</data>
 		<key>Roboto-Light.ttf</key>
 		<data>
 		UduuRUOqoQCW40Tkj8/+RovTFKk=
 		</data>
-		<key>Roboto-LightItalic.ttf</key>
-		<data>
-		U49rl3pxCfFM8xS4utGO2EUZ2ZU=
-		</data>
 		<key>Roboto-Medium.ttf</key>
 		<data>
 		/dyLHGiO87rtDVpGq/XwHw7a8Cs=
 		</data>
-		<key>Roboto-MediumItalic.ttf</key>
-		<data>
-		sTVZc0qmAvmhvduLW+ctcDaFhxY=
-		</data>
 		<key>Roboto-Regular.ttf</key>
 		<data>
 		hNECSIc4sOu8elCHlz7/vVTJW9U=
-		</data>
-		<key>Roboto-Thin.ttf</key>
-		<data>
-		4HxAC1XvSsf7X/mnnTAXEpIsaBs=
-		</data>
-		<key>Roboto-ThinItalic.ttf</key>
-		<data>
-		TID3wESn6ag4ZfYlVZ4RTqTX0rE=
 		</data>
 		<key>atencao.png</key>
 		<data>
@@ -128,6 +96,10 @@
 		<data>
 		gP6+fDMEXzbnDfI+BJEphxqqEL4=
 		</data>
+		<key>botao_captura_manual.png</key>
+		<data>
+		WEL/1bt3F2XGZtc3lDVvynyD/ok=
+		</data>
 		<key>brscan_negativo1.png</key>
 		<data>
 		MC8XgvNYTLuKD8lav49Vpukv8eo=
@@ -136,6 +108,10 @@
 		<data>
 		Tz8p8sVagGV6XYce9tRQEyP8HlM=
 		</data>
+		<key>configuracoes.plist</key>
+		<data>
+		48VM78pAY7itUP51WkTwAMLQnSw=
+		</data>
 		<key>doc_fit_vertical.png</key>
 		<data>
 		qSOnpchDErd5icPTl3qIRCrzAzs=
@@ -143,6 +119,10 @@
 		<key>engrenagem.png</key>
 		<data>
 		/B5INz0F8J4148T4RINTN+wSaEA=
+		</data>
+		<key>ic_baseline_close.png</key>
+		<data>
+		lDM/QR3HPGZdZE9W8ROfMnGAC/4=
 		</data>
 		<key>icone_documento.png</key>
 		<data>
@@ -155,6 +135,10 @@
 		<key>icone_verificacao_sucesso.png</key>
 		<data>
 		XSsTDcFA6U2KipAfwye7fTbbUR4=
+		</data>
+		<key>imageA.jpg</key>
+		<data>
+		Pv60dpoMfnXzRwndjGzZmHFv4gI=
 		</data>
 		<key>voltar.png</key>
 		<data>
@@ -178,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WE/B6/4eFhm6dMBVW9rTve77HrMWJgGh6Su3rCWpiEU=
+			Sd9hDEj8dvhK/VzWuuObT2uByrpmATmN1xdnRBUIGnk=
 			</data>
 		</dict>
 		<key>Headers/brscan_sdk_documento_ios.h</key>
@@ -234,14 +218,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rk9dYPh+0lK26q2k2zdblN77xfK+Hc6EbbjW7ipzCNo=
+			V4Nrl2pQr87Gy+W8WS/1o5+QVC12GPdKQpig28O47J8=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rk9dYPh+0lK26q2k2zdblN77xfK+Hc6EbbjW7ipzCNo=
+			V4Nrl2pQr87Gy+W8WS/1o5+QVC12GPdKQpig28O47J8=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -255,7 +239,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bt0DMhqtU0pLojvJflrz6dXWja3F9JkqbByWMS2dHds=
+			OKCKHEH/6jers6+s0Y/+0WyrFpvsj5fwCwuLaAA33Gg=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
@@ -269,7 +253,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bt0DMhqtU0pLojvJflrz6dXWja3F9JkqbByWMS2dHds=
+			OKCKHEH/6jers6+s0Y/+0WyrFpvsj5fwCwuLaAA33Gg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -279,39 +263,11 @@
 			uKwnUVgYeqIDm3GrIntwXIzcaSQZCKxQ+eCwUq8rYPE=
 			</data>
 		</dict>
-		<key>Roboto-Black.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LjN2g2L9NX54HQFnDbHSJt+0hMbyt2nzt5hGnuH4KtY=
-			</data>
-		</dict>
-		<key>Roboto-BlackItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wtE+LcfEAoEsac86+j89kGYKLBBaKJDuX8BQfK/NquQ=
-			</data>
-		</dict>
 		<key>Roboto-Bold.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			uvRM6BY2zJJ/wndoQ35dqFO6xpnoqvgy0ELw3+0ptLQ=
-			</data>
-		</dict>
-		<key>Roboto-BoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Rnqe97VMkeuL6Ysu8T84VykwLSKV+rUQH4APHIRTsXA=
-			</data>
-		</dict>
-		<key>Roboto-Italic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iq8jrC7ps+8bYcI5Cz5uAsCqakCdWRx/1/PU189R4As=
 			</data>
 		</dict>
 		<key>Roboto-Light.ttf</key>
@@ -321,13 +277,6 @@
 			KDWzWKqqMp+aS7R5NslmhyAsokd0ouHHglGllvKwH6U=
 			</data>
 		</dict>
-		<key>Roboto-LightItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PsEo5yo2cHm3J3Xta/HrDrvqjRt63W24xbmjCf9vL0Q=
-			</data>
-		</dict>
 		<key>Roboto-Medium.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -335,32 +284,11 @@
 			SsjgNgb/pMN/YaZRCiCA8fN6cFT0cmwhSIfTsj9y42k=
 			</data>
 		</dict>
-		<key>Roboto-MediumItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hSRza6uTOcGiVw5hA3eUvfTGqjhPv3W5jNUNWVnQsLM=
-			</data>
-		</dict>
 		<key>Roboto-Regular.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			MZz/bnox8PKkHEddykKJCqXRn+FgF+IpD4wdThT3ZIE=
-			</data>
-		</dict>
-		<key>Roboto-Thin.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			v5dgpIIWiNVE7H2vunsGCrH6dYNgQDU3V5vwZ5LSkPg=
-			</data>
-		</dict>
-		<key>Roboto-ThinItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ysvmS9xjmEDzWFKPCnf4AfRtakfLlHZOG3B95IT08nw=
 			</data>
 		</dict>
 		<key>atencao.png</key>
@@ -377,6 +305,13 @@
 			gmuy+xdS8fvIZHf3Z6IPSTkV+UNpt7+T25Mp8irH/to=
 			</data>
 		</dict>
+		<key>botao_captura_manual.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q3X1F3Cb17coeHDhL+z5+PK+QYdsJwkTTCbUK0JvFk0=
+			</data>
+		</dict>
 		<key>brscan_negativo1.png</key>
 		<dict>
 			<key>hash2</key>
@@ -391,6 +326,13 @@
 			TrZkjKIqv8EIDJQE9Y6cN7uWwDPeIRFFrd0WH4JXQC4=
 			</data>
 		</dict>
+		<key>configuracoes.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			btTcXBsdTGNd/u5+va6o6cJW9T42PGBKaOIReZ4Ss7s=
+			</data>
+		</dict>
 		<key>doc_fit_vertical.png</key>
 		<dict>
 			<key>hash2</key>
@@ -403,6 +345,13 @@
 			<key>hash2</key>
 			<data>
 			wyVSI5eSKt6ufMHQBOBenb7dVG+wtc0Pme1ByjjYLPQ=
+			</data>
+		</dict>
+		<key>ic_baseline_close.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7SGfNkkdfNYh8CAW0EZKA51tSsVgcw6YH/wNBqmZIu8=
 			</data>
 		</dict>
 		<key>icone_documento.png</key>
@@ -424,6 +373,13 @@
 			<key>hash2</key>
 			<data>
 			ZoCqVeMOnvKKgTFdFNRkvKpgz88oLVi9o2u4JT+byc4=
+			</data>
+		</dict>
+		<key>imageA.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mKidWzqyO6uEzPCmo5B6Ha+XuFjiWVcBjyneyksLQaY=
 			</data>
 		</dict>
 		<key>voltar.png</key>

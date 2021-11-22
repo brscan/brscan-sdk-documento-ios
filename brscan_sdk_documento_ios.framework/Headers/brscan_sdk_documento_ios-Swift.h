@@ -238,7 +238,7 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios30CapturaDocumentoViewController")
 SWIFT_CLASS("_TtC24brscan_sdk_documento_ios31CapturarDocumentoViewController")
 @interface CapturarDocumentoViewController : UIViewController
 @property (nonatomic, strong) id <CapturarDocumentoViewControllerDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra botaoCaptura:(BOOL)botaoCaptura timeoutCapturaManual:(double)timeoutCapturaManual OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
@@ -270,6 +270,42 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios21OvalGraficOverlayView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
+
+SWIFT_CLASS("_TtC24brscan_sdk_documento_ios33PermanecerCapturaABViewController")
+@interface PermanecerCapturaABViewController : UIViewController
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC24brscan_sdk_documento_ios37PermanecerCapturaFrenteViewController")
+@interface PermanecerCapturaFrenteViewController : UIViewController
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC24brscan_sdk_documento_ios36PermanecerCapturaVersoViewController")
+@interface PermanecerCapturaVersoViewController : UIViewController
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+
 
 
 
