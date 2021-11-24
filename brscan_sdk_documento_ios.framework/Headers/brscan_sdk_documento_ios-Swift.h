@@ -245,12 +245,11 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios31CapturarDocumentoViewController")
 @end
 
 
-@class DocumentoModel;
 
 SWIFT_PROTOCOL("_TtP24brscan_sdk_documento_ios39CapturarDocumentoViewControllerDelegate_")
 @protocol CapturarDocumentoViewControllerDelegate
 - (void)erro:(NSString * _Nonnull)erro;
-- (void)sucesso:(NSArray<DocumentoModel *> * _Nonnull)documento;
+- (void)sucesso:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documento;
 - (void)luminosidade:(NSString * _Nonnull)erro;
 - (void)cameraNenhuma:(NSString * _Nonnull)erro;
 - (void)cemeraSemPermissao:(NSString * _Nonnull)erro;
@@ -272,28 +271,6 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios21OvalGraficOverlayView")
 @end
 
 
-SWIFT_CLASS("_TtC24brscan_sdk_documento_ios33PermanecerCapturaABViewController")
-@interface PermanecerCapturaABViewController : UIViewController
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
-
-
-
-SWIFT_CLASS("_TtC24brscan_sdk_documento_ios37PermanecerCapturaFrenteViewController")
-@interface PermanecerCapturaFrenteViewController : UIViewController
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
-
-
-
 SWIFT_CLASS("_TtC24brscan_sdk_documento_ios36PermanecerCapturaVersoViewController")
 @interface PermanecerCapturaVersoViewController : UIViewController
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
@@ -301,6 +278,18 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios36PermanecerCapturaVersoViewControlle
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
+
+
+
+SWIFT_CLASS("_TtC24brscan_sdk_documento_ios37PermanecerCapturaVersoViewController2")
+@interface PermanecerCapturaVersoViewController2 : UIViewController
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
 
 
 
