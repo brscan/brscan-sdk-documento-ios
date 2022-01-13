@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		F4PN8tCpDBCSx5LMlCgh5M9WEk4=
+		Safp6H2BtFaRkj5lCLCqL10ToMA=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/Info.plist</key>
 		<data>
-		SQAA4ACX2YkFV9WimWjixSGfA/g=
+		xPiVrSEYvgLykdBR+S2NpW6cclQ=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/mobile_object_localizer_3_1_anchors.pb</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>MLKitObjectDetectionResources.bundle/Info.plist</key>
 		<data>
-		Cq5FBwvJ2EflzYfaoVnhcAfyW+o=
+		KNp9D+0qIcQubWuPX2ZQGdzae6M=
 		</data>
 		<key>MLKitObjectDetectionResources.bundle/mobile_object_classifier_v0_2_3_with_metadata.tflite</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Mwo5Q2Ez+q4ajFA3cw6bJo73YUw=
+		B3lsIjNWvSZLDx3O6g7ZFJrO/Kc=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Mwo5Q2Ez+q4ajFA3cw6bJo73YUw=
+		B3lsIjNWvSZLDx3O6g7ZFJrO/Kc=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -176,7 +176,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aFxxJkQH/jkc50FJ6BYSt0ddhREYp/ndo8o72PomY8=
+			I91nJ9+sv3vYnjLON8T9H16XK7bpq1abw+Uf3v7VV1o=
 			</data>
 		</dict>
 		<key>MLKitObjectDetectionCommonResources.bundle/mobile_object_localizer_3_1_anchors.pb</key>
@@ -204,7 +204,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKiZS37ipqe2oPmNhQBoX5z77oUkeN6nNKDjOQAjWTY=
+			tp1T3T3hut18xCW9SuyTttl50wv7xOd0DkgXZ8yWHjw=
 			</data>
 		</dict>
 		<key>MLKitObjectDetectionResources.bundle/mobile_object_classifier_v0_2_3_with_metadata.tflite</key>
@@ -218,14 +218,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtrSs/exWeT5UhZCt47pnCvj4wZopHK7HP6Dz7WV8uo=
+			jZjfKLwwWvsGM/JpOA4falg/ZbRZbLaHxgfGg8kqZbI=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtrSs/exWeT5UhZCt47pnCvj4wZopHK7HP6Dz7WV8uo=
+			jZjfKLwwWvsGM/JpOA4falg/ZbRZbLaHxgfGg8kqZbI=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
