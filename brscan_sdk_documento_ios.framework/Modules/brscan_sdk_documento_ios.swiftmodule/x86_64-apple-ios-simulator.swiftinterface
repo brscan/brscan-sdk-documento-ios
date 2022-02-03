@@ -1,0 +1,205 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name brscan_sdk_documento_ios
+import AVFoundation
+import CommonCrypto
+import CoreVideo
+import Foundation
+import MLKitObjectDetection
+import MLKitVision
+import MobileCoreServices
+import Security
+import Swift
+import UIKit
+@_exported import brscan_sdk_documento_ios
+public struct Documento : Swift.Codable {
+  public var path: Swift.String
+  public var tipo: Swift.String
+  public var score: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class UIUtilities {
+  public static func addRectangle(_ rectangle: CoreGraphics.CGRect, to view: UIKit.UIView)
+  public static func createUIImage(from imageBuffer: CoreVideo.CVImageBuffer, orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
+  public static func imageOrientation(fromDevicePosition devicePosition: AVFoundation.AVCaptureDevice.Position) -> UIKit.UIImage.Orientation
+  @objc deinit
+}
+public protocol CapturaDocumentoViewControllerDelegate {
+  func erro(_ erro: Swift.String)
+  func sucesso(_ documento: [brscan_sdk_documento_ios.DocumentoModel])
+  func luminosidade(_ erro: Swift.String)
+  func cameraNenhuma(_ erro: Swift.String)
+  func cemeraSemPermissao(_ erro: Swift.String)
+  func fecharTelaDeDocumento()
+}
+@objc @_hasMissingDesignatedInitializers public class CapturaDocumentoViewController : UIKit.UIViewController {
+  @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  public var delegate: brscan_sdk_documento_ios.CapturaDocumentoViewControllerDelegate?
+  public var tipoDocumento: Swift.String?
+  public var pvCamera: AVFoundation.AVCaptureVideoPreviewLayer!
+  required public init(chave: Swift.String, tipoDocumento: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, botaoCaptura: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtra: Swift.Bool, timeoutCapturaManual: Swift.Double)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidLayoutSubviews()
+  public func startSession()
+  public func stopSession()
+  public func addLayoutSubviews()
+  public func sucessoLiveness(_ isLadoAB: Swift.Bool)
+  public func erroLuminosidade(_ erro: Swift.String)
+  public func erroLiveness(_ erro: Swift.String)
+  public func erro(_ erro: Swift.String)
+  public func cameraPermissao(_ erro: Swift.String)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension CapturaDocumentoViewController : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@_hasMissingDesignatedInitializers final public class CameraCaptureHandler {
+  @objc deinit
+}
+extension UIView {
+  public var viewWidth: CoreGraphics.CGFloat {
+    get
+  }
+  public var viewHeight: CoreGraphics.CGFloat {
+    get
+  }
+}
+@objc public protocol CapturarDocumentoViewControllerDelegate {
+  @objc func erro(_ erro: Swift.String)
+  @objc func sucesso(_ documento: [[Swift.String : Swift.String]])
+  @objc func luminosidade(_ erro: Swift.String)
+  @objc func cameraNenhuma(_ erro: Swift.String)
+  @objc func cemeraSemPermissao(_ erro: Swift.String)
+  @objc func fecharTelaDeDocumento()
+}
+@objc @_hasMissingDesignatedInitializers public class CapturarDocumentoViewController : UIKit.UIViewController {
+  @objc public var delegate: brscan_sdk_documento_ios.CapturarDocumentoViewControllerDelegate?
+  @objc required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtra: Swift.Bool, botaoCaptura: Swift.Bool = false, timeoutCapturaManual: Swift.Double)
+  @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension CapturarDocumentoViewController : brscan_sdk_documento_ios.CapturaDocumentoViewControllerDelegate {
+  public func sucesso(_ documento: [brscan_sdk_documento_ios.DocumentoModel])
+  public func fecharTelaDeDocumento()
+  public func erro(_ erro: Swift.String)
+  public func luminosidade(_ erro: Swift.String)
+  public func cameraNenhuma(_ erro: Swift.String)
+  public func cemeraSemPermissao(_ erro: Swift.String)
+}
+extension UIColor {
+  public var primary: UIKit.UIColor {
+    get
+  }
+  public var brscan_background_captura: UIKit.UIColor {
+    get
+  }
+  public var brscan_default_captura: UIKit.UIColor {
+    get
+  }
+  public var secondary: UIKit.UIColor {
+    get
+  }
+  public var success: UIKit.UIColor {
+    get
+  }
+  public var brscan_highlight_captura: UIKit.UIColor {
+    get
+  }
+  public var corBotaoFechar: UIKit.UIColor {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OvalGraficOverlayView : UIKit.UIView {
+  public var shape: QuartzCore.CAShapeLayer
+  public func addEclipsePequeno()
+  public func addEclipseGrande()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class PermanecerCapturaVersoViewController : UIKit.UIViewController {
+  @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension String {
+  public var brscan_documento_frente_title: Swift.String {
+    get
+  }
+  public var brscan_documento_verso_title: Swift.String {
+    get
+  }
+  public var brscan_documento_botao_de_acao: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_frente_title: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_frente_subtitle: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_verso_title: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_verso_subtitle: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_ambos_title: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_ambos_subtitle: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_continuar_botao_de_acao: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_finalizar_botao_de_acao: Swift.String {
+    get
+  }
+  public var brscan_confirma_documento_repetir_botao_de_acao: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class PermanecerCapturaVersoViewController2 : UIKit.UIViewController {
+  @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension UIFont {
+  public static func loadFontWith(name: Swift.String)
+  public static var loadFonts: ()
+}
+extension UIFont {
+  public var ligth: Swift.String {
+    get
+  }
+  public var medium: Swift.String {
+    get
+  }
+  public var regular: Swift.String {
+    get
+  }
+  public var bold: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DocumentoModel : ObjectiveC.NSObject, Swift.Codable {
+  public var path: Swift.String
+  public var tipo: Swift.String
+  public var score: Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
