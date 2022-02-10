@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/brscan_sdk_documento_ios-Swift.h</key>
 		<data>
-		pJX9i0lY/HKdiX5gnvXuCjCTEK0=
+		RxXzvFfTFn9cPwfw78fTs8b8pvo=
 		</data>
 		<key>Headers/brscan_sdk_documento_ios.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Safp6H2BtFaRkj5lCLCqL10ToMA=
+		LATJx9rfvC/d/3+KkTgMIbEqVCM=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/Info.plist</key>
 		<data>
-		xPiVrSEYvgLykdBR+S2NpW6cclQ=
+		TqmFYDjL0Vbpc9Lwgw5loEhAmM8=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/mobile_object_localizer_3_1_anchors.pb</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>MLKitObjectDetectionResources.bundle/Info.plist</key>
 		<data>
-		KNp9D+0qIcQubWuPX2ZQGdzae6M=
+		Ved0sw3OwejDpbu+Xeh9XuefTl0=
 		</data>
 		<key>MLKitObjectDetectionResources.bundle/mobile_object_classifier_v0_2_3_with_metadata.tflite</key>
 		<data>
@@ -46,35 +46,35 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Mwo5Q2Ez+q4ajFA3cw6bJo73YUw=
+		31wvGaGJkd5Zz51lkXLRhaRxyzY=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Mwo5Q2Ez+q4ajFA3cw6bJo73YUw=
+		31wvGaGJkd5Zz51lkXLRhaRxyzY=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		TMiwyfLVo0mTGRlXNkjp7k/TZrU=
+		sI1p28gbt/jurSO12Rr+Pz6RpVc=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		wMsmZyFj4LOc8rGHyDF6nN0PgEg=
+		aqXS+JSWKXji2XovQa8XCfVSQYw=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7IryqAKWMNo2TxorZtdR/rYaH44=
+		kmkE80IqJzgL/tVj2TtZH4Y/iHE=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		TMiwyfLVo0mTGRlXNkjp7k/TZrU=
+		sI1p28gbt/jurSO12Rr+Pz6RpVc=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		wMsmZyFj4LOc8rGHyDF6nN0PgEg=
+		aqXS+JSWKXji2XovQa8XCfVSQYw=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7IryqAKWMNo2TxorZtdR/rYaH44=
+		kmkE80IqJzgL/tVj2TtZH4Y/iHE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,11 +118,39 @@
 		</data>
 		<key>configuracoes.plist</key>
 		<data>
-		PU6LNJN7ei/2mL+RwpsomYYP0qo=
+		zBU1cq0koTp/SwgYV/lxfwk6h1A=
+		</data>
+		<key>dica_1.png</key>
+		<data>
+		IDaCuvtHH4AWZNMedXqHCpQqtX8=
+		</data>
+		<key>dica_2.png</key>
+		<data>
+		jiWZ0k1fsfqr5fdHf3TKJjFG6jI=
+		</data>
+		<key>dica_3.png</key>
+		<data>
+		QU89CRqUNR++jiud7dWJ8EVptIQ=
+		</data>
+		<key>dica_4.png</key>
+		<data>
+		zcSdJbHTluRy/y+pkYPvLP2Pl5I=
 		</data>
 		<key>doc_fit_vertical.png</key>
 		<data>
 		qSOnpchDErd5icPTl3qIRCrzAzs=
+		</data>
+		<key>documento_cnh.png</key>
+		<data>
+		hyjANB4HHHv1ajqiohb86d3ebJU=
+		</data>
+		<key>documento_outro.png</key>
+		<data>
+		d+EZoYhTuUt6FD2STvFaWQzDTHA=
+		</data>
+		<key>documento_rg.png</key>
+		<data>
+		yzTzNtdMWHze9KXL/hZzGLInZjM=
 		</data>
 		<key>engrenagem.png</key>
 		<data>
@@ -143,10 +171,6 @@
 		<key>icone_verificacao_sucesso.png</key>
 		<data>
 		XSsTDcFA6U2KipAfwye7fTbbUR4=
-		</data>
-		<key>imageA.jpg</key>
-		<data>
-		Pv60dpoMfnXzRwndjGzZmHFv4gI=
 		</data>
 		<key>voltar.png</key>
 		<data>
@@ -170,7 +194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VZyaoVh8VK4BfvJ/+pFXK0cpY2UNw8uyyGe1a+1p1IU=
+			7qclZJ/qlnxi2CC1u+cSHG1uJptBAHHz83af2hqBcgM=
 			</data>
 		</dict>
 		<key>Headers/brscan_sdk_documento_ios.h</key>
@@ -184,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I91nJ9+sv3vYnjLON8T9H16XK7bpq1abw+Uf3v7VV1o=
+			vFNfnZPHGAKVhn77JpunkOxN4LP++HQ4G4ELDGqKfkM=
 			</data>
 		</dict>
 		<key>MLKitObjectDetectionCommonResources.bundle/mobile_object_localizer_3_1_anchors.pb</key>
@@ -212,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tp1T3T3hut18xCW9SuyTttl50wv7xOd0DkgXZ8yWHjw=
+			XF0RYQbDCYNzMQe+46OUmPvHKPNqe1XU8I5KzGzffyk=
 			</data>
 		</dict>
 		<key>MLKitObjectDetectionResources.bundle/mobile_object_classifier_v0_2_3_with_metadata.tflite</key>
@@ -226,56 +250,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtrSs/exWeT5UhZCt47pnCvj4wZopHK7HP6Dz7WV8uo=
+			6wtmxvolqqGCM1at1oJmBOnbDUcTEcf1br0/6wSEp/E=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtrSs/exWeT5UhZCt47pnCvj4wZopHK7HP6Dz7WV8uo=
+			6wtmxvolqqGCM1at1oJmBOnbDUcTEcf1br0/6wSEp/E=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ie4Ali3Eq7/6S1KZ4nzey8o3aOZipb16RBhGKUJoMWA=
+			yw3GkdS5izNTBEIG9bBCKej7O8P18bpGGCcO1msB7C0=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hnJ00V+KTlmqKNDBYJzSylpHoo5i41kC+BQgo0jWhUw=
+			nQQ9ln+grBzvmi470fpO9mz8quYiQpa1zvpTR7Usua8=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1RCWkEQQ2sr8i5FQT5z76bf1Ncw+q6O34XQVoimU/jE=
+			FxFO5GDt8Et+P3MDsQFnoBKBVpmvwM5DZ4532dgK3TM=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ie4Ali3Eq7/6S1KZ4nzey8o3aOZipb16RBhGKUJoMWA=
+			yw3GkdS5izNTBEIG9bBCKej7O8P18bpGGCcO1msB7C0=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hnJ00V+KTlmqKNDBYJzSylpHoo5i41kC+BQgo0jWhUw=
+			nQQ9ln+grBzvmi470fpO9mz8quYiQpa1zvpTR7Usua8=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1RCWkEQQ2sr8i5FQT5z76bf1Ncw+q6O34XQVoimU/jE=
+			FxFO5GDt8Et+P3MDsQFnoBKBVpmvwM5DZ4532dgK3TM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -352,7 +376,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CYwwgMbig6tzvG8FtO3NmorhqPrrpCa7idHzhHAAsWQ=
+			tBaNBZOwbdqDdmSTgOjnppd2eIVQhbYF1UM/e553dfg=
+			</data>
+		</dict>
+		<key>dica_1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			347rQBGLuqsXUfgv+/mK0B97WVblj439FE3SZKok7jI=
+			</data>
+		</dict>
+		<key>dica_2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yco/RZme5AvFegqb/Wi/krRHLDGV03LgUK3IQL2gB9I=
+			</data>
+		</dict>
+		<key>dica_3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JL77keGXrZ8w7POtE22yS/1sutuEqMJjqexEcjwKtk8=
+			</data>
+		</dict>
+		<key>dica_4.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mz5SJNo7nN4P4CBR8CyhgjPPlad8Fr2Ji6w/2eI5nj8=
 			</data>
 		</dict>
 		<key>doc_fit_vertical.png</key>
@@ -360,6 +412,27 @@
 			<key>hash2</key>
 			<data>
 			diP3/hFVGgdTk/QT4atzLCTAK8DqUJUGlQNbLoSkgQk=
+			</data>
+		</dict>
+		<key>documento_cnh.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oJb78PqouI9j2V9iJnaF849ob8K4agP022Br9AHQzhY=
+			</data>
+		</dict>
+		<key>documento_outro.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mjBqwBRJ13fQjdXSuHf7OvXIHB2ADZ2O5FFomk6navY=
+			</data>
+		</dict>
+		<key>documento_rg.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tl+nC7O+hF1YJZz7Aqbm8fwC9Pa7gWfcMS/X4dVITuw=
 			</data>
 		</dict>
 		<key>engrenagem.png</key>
@@ -395,13 +468,6 @@
 			<key>hash2</key>
 			<data>
 			ZoCqVeMOnvKKgTFdFNRkvKpgz88oLVi9o2u4JT+byc4=
-			</data>
-		</dict>
-		<key>imageA.jpg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mKidWzqyO6uEzPCmo5B6Ha+XuFjiWVcBjyneyksLQaY=
 			</data>
 		</dict>
 		<key>voltar.png</key>
