@@ -233,12 +233,21 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios30CapturaDocumentoViewController")
 @end
 
 
+@class UIImagePickerController;
+
+@interface CapturaDocumentoViewController (SWIFT_EXTENSION(brscan_sdk_documento_ios)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+@end
+
+
 @protocol CapturarDocumentoViewControllerDelegate;
+@class ConfiguracaoTexto;
 
 SWIFT_CLASS("_TtC24brscan_sdk_documento_ios31CapturarDocumentoViewController")
 @interface CapturarDocumentoViewController : UIViewController
 @property (nonatomic, strong) id <CapturarDocumentoViewControllerDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra botaoCaptura:(BOOL)botaoCaptura timeoutCapturaManual:(double)timeoutCapturaManual OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra timeoutCapturaManual:(double)timeoutCapturaManual telaSelecaoDocumento:(BOOL)telaSelecaoDocumento resolucao:(NSString * _Nonnull)resolucao dicaSlide:(BOOL)dicaSlide ladoDocumentoAceito:(NSString * _Nonnull)ladoDocumentoAceito tipoRetorno:(NSString * _Nonnull)tipoRetorno telaPreview:(BOOL)telaPreview customizacaoTexto:(ConfiguracaoTexto * _Nonnull)customizacaoTexto OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
@@ -249,11 +258,18 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios31CapturarDocumentoViewController")
 SWIFT_PROTOCOL("_TtP24brscan_sdk_documento_ios39CapturarDocumentoViewControllerDelegate_")
 @protocol CapturarDocumentoViewControllerDelegate
 - (void)erro:(NSString * _Nonnull)erro;
-- (void)sucesso:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documento;
+- (void)sucesso:(NSArray<NSDictionary<NSString *, id> *> * _Nonnull)documento;
 - (void)luminosidade:(NSString * _Nonnull)erro;
 - (void)cameraNenhuma:(NSString * _Nonnull)erro;
 - (void)cemeraSemPermissao:(NSString * _Nonnull)erro;
 - (void)fecharTelaDeDocumento;
+@end
+
+
+SWIFT_CLASS("_TtC24brscan_sdk_documento_ios17ConfiguracaoTexto")
+@interface ConfiguracaoTexto : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBrscan_documento_loading:(NSString * _Nonnull)brscan_documento_loading brscan_documento_captura_estado_aguardando_documento:(NSString * _Nonnull)brscan_documento_captura_estado_aguardando_documento brscan_documento_captura_estado_encaixe_documento:(NSString * _Nonnull)brscan_documento_captura_estado_encaixe_documento brscan_documento_captura_estado_centralize_documento:(NSString * _Nonnull)brscan_documento_captura_estado_centralize_documento brscan_documento_captura_estado_aproxime_documento:(NSString * _Nonnull)brscan_documento_captura_estado_aproxime_documento brscan_documento_captura_estado_afaste_documento:(NSString * _Nonnull)brscan_documento_captura_estado_afaste_documento brscan_documento_captura_estado_aguarde:(NSString * _Nonnull)brscan_documento_captura_estado_aguarde brscan_documento_captura_frente_rg:(NSString * _Nonnull)brscan_documento_captura_frente_rg brscan_documento_captura_verso_rg:(NSString * _Nonnull)brscan_documento_captura_verso_rg brscan_documento_captura_frente_cnh:(NSString * _Nonnull)brscan_documento_captura_frente_cnh brscan_documento_captura_verso_cnh:(NSString * _Nonnull)brscan_documento_captura_verso_cnh brscan_documento_captura_frente_documento:(NSString * _Nonnull)brscan_documento_captura_frente_documento brscan_documento_captura_verso_documento:(NSString * _Nonnull)brscan_documento_captura_verso_documento brscan_documento_erro_conexao:(NSString * _Nonnull)brscan_documento_erro_conexao brscan_documento_erro_ao_validar_chave:(NSString * _Nonnull)brscan_documento_erro_ao_validar_chave brscan_documento_erro_baixa_luminosidade:(NSString * _Nonnull)brscan_documento_erro_baixa_luminosidade brscan_documento_erro_device_rooted:(NSString * _Nonnull)brscan_documento_erro_device_rooted brscan_documento_erro_usuario_cancelou_acao:(NSString * _Nonnull)brscan_documento_erro_usuario_cancelou_acao brscan_documento_erro_processo:(NSString * _Nonnull)brscan_documento_erro_processo brscan_documento_erro_no_servidor:(NSString * _Nonnull)brscan_documento_erro_no_servidor brscan_documento_erro_ao_validar_imagem:(NSString * _Nonnull)brscan_documento_erro_ao_validar_imagem brscan_documento_erro_lado_nao_permitido:(NSString * _Nonnull)brscan_documento_erro_lado_nao_permitido brscan_documento_erro_documento_nao_permitido:(NSString * _Nonnull)brscan_documento_erro_documento_nao_permitido brscan_documento_erro_nenhum_documento_encontrado:(NSString * _Nonnull)brscan_documento_erro_nenhum_documento_encontrado brscan_documento_erro_lado_errado:(NSString * _Nonnull)brscan_documento_erro_lado_errado brscan_documento_erro_documento_diferente:(NSString * _Nonnull)brscan_documento_erro_documento_diferente brscan_documento_erro_camera_indisponvel:(NSString * _Nonnull)brscan_documento_erro_camera_indisponvel brscan_documento_erro_lado_diferente:(NSString * _Nonnull)brscan_documento_erro_lado_diferente brscan_documento_erro_acesso_negado_title:(NSString * _Nonnull)brscan_documento_erro_acesso_negado_title brscan_documento_erro_captura_camera_subtitle:(NSString * _Nonnull)brscan_documento_erro_captura_camera_subtitle brscan_documento_captura_camera_botao_de_acao:(NSString * _Nonnull)brscan_documento_captura_camera_botao_de_acao brscan_documento_erro_captura_title:(NSString * _Nonnull)brscan_documento_erro_captura_title brscan_documento_erro_captura_subtitle:(NSString * _Nonnull)brscan_documento_erro_captura_subtitle brscan_documento_erro_captura_botao_tentar_novamente:(NSString * _Nonnull)brscan_documento_erro_captura_botao_tentar_novamente brscan_documento_erro_captura_botao_sair_do_processo:(NSString * _Nonnull)brscan_documento_erro_captura_botao_sair_do_processo brscan_confirma_documento_frente_title:(NSString * _Nonnull)brscan_confirma_documento_frente_title brscan_confirma_documento_frente_subtitle:(NSString * _Nonnull)brscan_confirma_documento_frente_subtitle brscan_confirma_documento_verso_title:(NSString * _Nonnull)brscan_confirma_documento_verso_title brscan_confirma_documento_verso_subtitle:(NSString * _Nonnull)brscan_confirma_documento_verso_subtitle brscan_confirma_documento_ambos_title:(NSString * _Nonnull)brscan_confirma_documento_ambos_title brscan_confirma_documento_ambos_subtitle:(NSString * _Nonnull)brscan_confirma_documento_ambos_subtitle brscan_confirma_documento_continuar_botao_de_acao:(NSString * _Nonnull)brscan_confirma_documento_continuar_botao_de_acao brscan_confirma_documento_finalizar_botao_de_acao:(NSString * _Nonnull)brscan_confirma_documento_finalizar_botao_de_acao brscan_confirma_documento_repetir_botao_de_acao:(NSString * _Nonnull)brscan_confirma_documento_repetir_botao_de_acao brscan_documento_proximo_processso_frente_title:(NSString * _Nonnull)brscan_documento_proximo_processso_frente_title brscan_documento_proximo_processso_verso_title:(NSString * _Nonnull)brscan_documento_proximo_processso_verso_title brscan_documento_proximo_processso_botao_de_acao:(NSString * _Nonnull)brscan_documento_proximo_processso_botao_de_acao OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
