@@ -12,7 +12,7 @@ import Security
 import Swift
 import UIKit
 @_exported import brscan_sdk_documento_ios
-@_inheritsConvenienceInitializers @objc public class ConfiguracaoTexto : ObjectiveC.NSObject, Swift.Codable {
+@_inheritsConvenienceInitializers @objc public class ConfiguracaoTextoDocumento : ObjectiveC.NSObject, Swift.Codable {
   public var brscan_documento_loading: Swift.String
   public var brscan_documento_captura_estado_aguardando_documento: Swift.String
   public var brscan_documento_captura_estado_encaixe_documento: Swift.String
@@ -147,7 +147,7 @@ public struct BoundingBox : Swift.Codable {
 }
 @objc @_hasMissingDesignatedInitializers public class CapturarDocumentoViewController : UIKit.UIViewController {
   @objc public var delegate: brscan_sdk_documento_ios.CapturarDocumentoViewControllerDelegate?
-  @objc required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtra: Swift.Bool = false, timeoutCapturaManual: Swift.Double = 0.0, telaSelecaoDocumento: Swift.Bool, resolucao: Swift.String, dicaSlide: Swift.Bool, ladoDocumentoAceito: Swift.String = "", tipoRetorno: Swift.String, telaPreview: Swift.Bool = true, customizacaoTexto: brscan_sdk_documento_ios.ConfiguracaoTexto = ConfiguracaoTexto())
+  @objc required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtra: Swift.Bool = false, timeoutCapturaManual: Swift.Double = 0.0, telaSelecaoDocumento: Swift.Bool, resolucao: Swift.String, dicaSlide: Swift.Bool, ladoDocumentoAceito: Swift.String = "", tipoRetorno: Swift.String, telaPreview: Swift.Bool = true, customizacaoTexto: brscan_sdk_documento_ios.ConfiguracaoTextoDocumento = ConfiguracaoTextoDocumento())
   @objc override dynamic public func viewDidLoad()
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
