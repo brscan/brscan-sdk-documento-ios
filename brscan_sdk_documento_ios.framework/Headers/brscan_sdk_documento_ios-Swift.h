@@ -236,13 +236,6 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios30CapturaDocumentoViewController")
 @end
 
 
-@class UIImagePickerController;
-
-@interface CapturaDocumentoViewController (SWIFT_EXTENSION(brscan_sdk_documento_ios)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
-- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
-@end
-
 
 @protocol CapturarDocumentoViewControllerDelegate;
 @class ConfiguracaoTextoDocumento;
@@ -250,7 +243,7 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios30CapturaDocumentoViewController")
 SWIFT_CLASS("_TtC24brscan_sdk_documento_ios31CapturarDocumentoViewController")
 @interface CapturarDocumentoViewController : UIViewController
 @property (nonatomic, strong) id <CapturarDocumentoViewControllerDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra timeoutCapturaManual:(double)timeoutCapturaManual telaSelecaoDocumento:(BOOL)telaSelecaoDocumento resolucao:(NSString * _Nonnull)resolucao dicaSlide:(BOOL)dicaSlide ladoDocumentoAceito:(NSString * _Nonnull)ladoDocumentoAceito tipoRetorno:(NSString * _Nonnull)tipoRetorno telaPreview:(BOOL)telaPreview scoreMinimo:(double)scoreMinimo customizacaoTexto:(ConfiguracaoTextoDocumento * _Nonnull)customizacaoTexto OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave cropDocumento:(BOOL)cropDocumento validaDocumento:(BOOL)validaDocumento wizard:(BOOL)wizard aceitaAB:(BOOL)aceitaAB tiposDocumentosAceitos:(NSArray<NSString *> * _Nonnull)tiposDocumentosAceitos segurancaExtra:(BOOL)segurancaExtra segurancaExtraSslPinning:(BOOL)segurancaExtraSslPinning segurancaExtraRootCheck:(BOOL)segurancaExtraRootCheck timeoutCapturaManual:(double)timeoutCapturaManual telaSelecaoDocumento:(BOOL)telaSelecaoDocumento resolucao:(NSString * _Nonnull)resolucao dicaSlide:(BOOL)dicaSlide ladoDocumentoAceito:(NSString * _Nonnull)ladoDocumentoAceito tipoRetorno:(NSString * _Nonnull)tipoRetorno telaPreview:(BOOL)telaPreview scoreMinimo:(double)scoreMinimo customizacaoTexto:(ConfiguracaoTextoDocumento * _Nonnull)customizacaoTexto retornarErros:(BOOL)retornarErros OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;

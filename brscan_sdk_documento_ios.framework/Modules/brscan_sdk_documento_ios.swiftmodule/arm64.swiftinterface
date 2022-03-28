@@ -98,7 +98,7 @@ public protocol CapturaDocumentoViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_documento_ios.CapturaDocumentoViewControllerDelegate?
   @_Concurrency.MainActor(unsafe) public var tipoDocumento: Swift.String?
   @_Concurrency.MainActor(unsafe) public var pvCamera: AVFoundation.AVCaptureVideoPreviewLayer!
-  @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, tipoDocumento: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtra: Swift.Bool, timeoutCapturaManual: Swift.Double, usarGaleria: Swift.Bool = false, resolucao: Swift.String, ladoDocumentoAceito: Swift.String, tipoRetorno: Swift.String, telaPreview: Swift.Bool, scoreMinimo: Swift.Double)
+  @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, tipoDocumento: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtraSslPinning: Swift.Bool, timeoutCapturaManual: Swift.Double, usarGaleria: Swift.Bool = false, resolucao: Swift.String, ladoDocumentoAceito: Swift.String, tipoRetorno: Swift.String, telaPreview: Swift.Bool, scoreMinimo: Swift.Double, retornarErros: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
@@ -107,18 +107,11 @@ public protocol CapturaDocumentoViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public func stopSession()
   @_Concurrency.MainActor(unsafe) public func addLayoutSubviews()
   @_Concurrency.MainActor(unsafe) public func sucessoLiveness(_ isLadoAB: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func erroLuminosidade(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func erroLiveness(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func erro(_ erro: Swift.String)
   @_Concurrency.MainActor(unsafe) public func cameraPermissao(_ erro: Swift.String)
   @objc deinit
 }
 extension brscan_sdk_documento_ios.CapturaDocumentoViewController : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
-}
-extension brscan_sdk_documento_ios.CapturaDocumentoViewController : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
 }
 @_hasMissingDesignatedInitializers final public class CameraCaptureHandler {
   @objc deinit
@@ -149,7 +142,7 @@ public struct BoundingBox : Swift.Codable {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturarDocumentoViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_documento_ios.CapturarDocumentoViewControllerDelegate?
-  @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String] = [], segurancaExtra: Swift.Bool = false, timeoutCapturaManual: Swift.Double = 0.0, telaSelecaoDocumento: Swift.Bool = false, resolucao: Swift.String = "low", dicaSlide: Swift.Bool = false, ladoDocumentoAceito: Swift.String = "", tipoRetorno: Swift.String = "base64", telaPreview: Swift.Bool = true, scoreMinimo: Swift.Double = 0.8, customizacaoTexto: brscan_sdk_documento_ios.ConfiguracaoTextoDocumento = ConfiguracaoTextoDocumento())
+  @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String] = [], segurancaExtra: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool = false, segurancaExtraRootCheck: Swift.Bool = false, timeoutCapturaManual: Swift.Double = 0.0, telaSelecaoDocumento: Swift.Bool = false, resolucao: Swift.String = "low", dicaSlide: Swift.Bool = false, ladoDocumentoAceito: Swift.String = "", tipoRetorno: Swift.String = "base64", telaPreview: Swift.Bool = true, scoreMinimo: Swift.Double = 0.8, customizacaoTexto: brscan_sdk_documento_ios.ConfiguracaoTextoDocumento = ConfiguracaoTextoDocumento(), retornarErros: Swift.Bool = false)
   @objc @_Concurrency.MainActor(unsafe) override dynamic public func viewDidLoad()
   @objc deinit
 }
