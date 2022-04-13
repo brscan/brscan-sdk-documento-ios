@@ -23,10 +23,13 @@ import _Concurrency
   public var brscan_documento_captura_estado_aguarde: Swift.String
   public var brscan_documento_captura_frente_rg: Swift.String
   public var brscan_documento_captura_verso_rg: Swift.String
+  public var brscan_documento_captura_rg_aberto: Swift.String
   public var brscan_documento_captura_frente_cnh: Swift.String
   public var brscan_documento_captura_verso_cnh: Swift.String
+  public var brscan_documento_captura_cnh_aberta: Swift.String
   public var brscan_documento_captura_frente_documento: Swift.String
   public var brscan_documento_captura_verso_documento: Swift.String
+  public var brscan_documento_captura_documento_aberto: Swift.String
   public var brscan_documento_erro_conexao: Swift.String
   public var brscan_documento_erro_ao_validar_chave: Swift.String
   public var brscan_documento_erro_baixa_luminosidade: Swift.String
@@ -63,7 +66,7 @@ import _Concurrency
   public var brscan_documento_proximo_processso_verso_title: Swift.String
   public var brscan_documento_proximo_processso_botao_de_acao: Swift.String
   @objc override dynamic public init()
-  @objc public init(brscan_documento_loading: Swift.String = "", brscan_documento_captura_estado_aguardando_documento: Swift.String = "", brscan_documento_captura_estado_encaixe_documento: Swift.String = "", brscan_documento_captura_estado_centralize_documento: Swift.String = "", brscan_documento_captura_estado_aproxime_documento: Swift.String = "", brscan_documento_captura_estado_afaste_documento: Swift.String = "", brscan_documento_captura_estado_aguarde: Swift.String = "", brscan_documento_captura_frente_rg: Swift.String = "", brscan_documento_captura_verso_rg: Swift.String = "", brscan_documento_captura_frente_cnh: Swift.String = "", brscan_documento_captura_verso_cnh: Swift.String = "", brscan_documento_captura_frente_documento: Swift.String = "", brscan_documento_captura_verso_documento: Swift.String = "", brscan_documento_erro_conexao: Swift.String = "", brscan_documento_erro_ao_validar_chave: Swift.String = "", brscan_documento_erro_baixa_luminosidade: Swift.String = "", brscan_documento_erro_device_rooted: Swift.String = "", brscan_documento_erro_usuario_cancelou_acao: Swift.String = "", brscan_documento_erro_processo: Swift.String = "", brscan_documento_erro_no_servidor: Swift.String = "", brscan_documento_erro_ao_validar_imagem: Swift.String = "", brscan_documento_erro_lado_nao_permitido: Swift.String = "", brscan_documento_erro_documento_nao_permitido: Swift.String = "", brscan_documento_erro_nenhum_documento_encontrado: Swift.String = "", brscan_documento_erro_lado_errado: Swift.String = "", brscan_documento_erro_documento_diferente: Swift.String = "", brscan_documento_erro_token_expired: Swift.String = "", brscan_documento_erro_camera_indisponvel: Swift.String = "", brscan_documento_erro_lado_diferente: Swift.String = "", brscan_documento_erro_acesso_negado_title: Swift.String = "", brscan_documento_erro_captura_camera_subtitle: Swift.String = "", brscan_documento_captura_camera_botao_de_acao: Swift.String = "", brscan_documento_erro_captura_title: Swift.String = "", brscan_documento_erro_captura_subtitle: Swift.String = "", brscan_documento_erro_captura_botao_tentar_novamente: Swift.String = "", brscan_documento_erro_captura_botao_sair_do_processo: Swift.String = "", brscan_confirma_documento_frente_title: Swift.String = "", brscan_confirma_documento_frente_subtitle: Swift.String = "", brscan_confirma_documento_verso_title: Swift.String = "", brscan_confirma_documento_verso_subtitle: Swift.String = "", brscan_confirma_documento_ambos_title: Swift.String = "", brscan_confirma_documento_ambos_subtitle: Swift.String = "", brscan_confirma_documento_continuar_botao_de_acao: Swift.String = "", brscan_confirma_documento_finalizar_botao_de_acao: Swift.String = "", brscan_confirma_documento_repetir_botao_de_acao: Swift.String = "", brscan_documento_proximo_processso_frente_title: Swift.String = "", brscan_documento_proximo_processso_verso_title: Swift.String = "", brscan_documento_proximo_processso_botao_de_acao: Swift.String = "")
+  @objc public init(brscan_documento_loading: Swift.String = "", brscan_documento_captura_estado_aguardando_documento: Swift.String = "", brscan_documento_captura_estado_encaixe_documento: Swift.String = "", brscan_documento_captura_estado_centralize_documento: Swift.String = "", brscan_documento_captura_estado_aproxime_documento: Swift.String = "", brscan_documento_captura_estado_afaste_documento: Swift.String = "", brscan_documento_captura_estado_aguarde: Swift.String = "", brscan_documento_captura_frente_rg: Swift.String = "", brscan_documento_captura_verso_rg: Swift.String = "", brscan_documento_captura_rg_aberto: Swift.String = "", brscan_documento_captura_frente_cnh: Swift.String = "", brscan_documento_captura_verso_cnh: Swift.String = "", brscan_documento_captura_cnh_aberta: Swift.String = "", brscan_documento_captura_frente_documento: Swift.String = "", brscan_documento_captura_verso_documento: Swift.String = "", brscan_documento_captura_documento_aberto: Swift.String = "", brscan_documento_erro_conexao: Swift.String = "", brscan_documento_erro_ao_validar_chave: Swift.String = "", brscan_documento_erro_baixa_luminosidade: Swift.String = "", brscan_documento_erro_device_rooted: Swift.String = "", brscan_documento_erro_usuario_cancelou_acao: Swift.String = "", brscan_documento_erro_processo: Swift.String = "", brscan_documento_erro_no_servidor: Swift.String = "", brscan_documento_erro_ao_validar_imagem: Swift.String = "", brscan_documento_erro_lado_nao_permitido: Swift.String = "", brscan_documento_erro_documento_nao_permitido: Swift.String = "", brscan_documento_erro_nenhum_documento_encontrado: Swift.String = "", brscan_documento_erro_lado_errado: Swift.String = "", brscan_documento_erro_documento_diferente: Swift.String = "", brscan_documento_erro_token_expired: Swift.String = "", brscan_documento_erro_camera_indisponvel: Swift.String = "", brscan_documento_erro_lado_diferente: Swift.String = "", brscan_documento_erro_acesso_negado_title: Swift.String = "", brscan_documento_erro_captura_camera_subtitle: Swift.String = "", brscan_documento_captura_camera_botao_de_acao: Swift.String = "", brscan_documento_erro_captura_title: Swift.String = "", brscan_documento_erro_captura_subtitle: Swift.String = "", brscan_documento_erro_captura_botao_tentar_novamente: Swift.String = "", brscan_documento_erro_captura_botao_sair_do_processo: Swift.String = "", brscan_confirma_documento_frente_title: Swift.String = "", brscan_confirma_documento_frente_subtitle: Swift.String = "", brscan_confirma_documento_verso_title: Swift.String = "", brscan_confirma_documento_verso_subtitle: Swift.String = "", brscan_confirma_documento_ambos_title: Swift.String = "", brscan_confirma_documento_ambos_subtitle: Swift.String = "", brscan_confirma_documento_continuar_botao_de_acao: Swift.String = "", brscan_confirma_documento_finalizar_botao_de_acao: Swift.String = "", brscan_confirma_documento_repetir_botao_de_acao: Swift.String = "", brscan_documento_proximo_processso_frente_title: Swift.String = "", brscan_documento_proximo_processso_verso_title: Swift.String = "", brscan_documento_proximo_processso_botao_de_acao: Swift.String = "")
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -94,7 +97,7 @@ public protocol CapturaDocumentoViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_documento_ios.CapturaDocumentoViewControllerDelegate?
   @_Concurrency.MainActor(unsafe) public var tipoDocumento: Swift.String?
   @_Concurrency.MainActor(unsafe) public var pvCamera: AVFoundation.AVCaptureVideoPreviewLayer!
-  @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, tipoDocumento: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtraSslPinning: Swift.Bool, timeoutCapturaManual: Swift.Double, usarGaleria: Swift.Bool = false, resolucao: Swift.String, ladoDocumentoAceito: Swift.String, tipoRetorno: Swift.String, telaPreview: Swift.Bool, scoreMinimo: Swift.Int, retornarErros: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, tipoDocumento: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtraSslPinning: Swift.Bool, timeoutCapturaManual: Swift.Double, usarGaleria: Swift.Bool = false, resolucao: Swift.String, ladoDocumentoAceito: Swift.String, tipoRetorno: Swift.String, telaPreview: Swift.Bool, scoreMinimo: Swift.Int, retornarErros: Swift.Bool, verificarLuminosidade: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
@@ -133,7 +136,7 @@ public struct BoundingBox : Swift.Codable {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturarDocumentoViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_documento_ios.CapturarDocumentoViewControllerDelegate?
-  @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String] = [], segurancaExtra: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool = false, segurancaExtraRootCheck: Swift.Bool = false, timeoutCapturaManual: Swift.Double = 0.0, telaSelecaoDocumento: Swift.Bool = false, resolucao: Swift.String = "low", dicaSlide: Swift.Bool = false, ladoDocumentoAceito: Swift.String = "", tipoRetorno: Swift.String = "base64", telaPreview: Swift.Bool = true, scoreMinimo: Swift.Int = 60, customizacaoTexto: brscan_sdk_documento_ios.ConfiguracaoTextoDocumento = ConfiguracaoTextoDocumento(), retornarErros: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool = false, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String] = [], segurancaExtra: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool = false, segurancaExtraRootCheck: Swift.Bool = false, timeoutCapturaManual: Swift.Double = 0.0, telaSelecaoDocumento: Swift.Bool = false, resolucao: Swift.String = "low", dicaSlide: Swift.Bool = false, ladoDocumentoAceito: Swift.String = "", tipoRetorno: Swift.String = "base64", telaPreview: Swift.Bool = true, scoreMinimo: Swift.Int = 60, customizacaoTexto: brscan_sdk_documento_ios.ConfiguracaoTextoDocumento = ConfiguracaoTextoDocumento(), retornarErros: Swift.Bool = false, verificarLuminosidade: Swift.Bool = true)
   @objc @_Concurrency.MainActor(unsafe) override dynamic public func viewDidLoad()
   @objc deinit
 }
@@ -145,13 +148,13 @@ extension UIKit.UIColor {
   public var primary: UIKit.UIColor {
     get
   }
+  public var secondary: UIKit.UIColor {
+    get
+  }
   public var brscan_background_captura: UIKit.UIColor {
     get
   }
   public var brscan_default_captura: UIKit.UIColor {
-    get
-  }
-  public var secondary: UIKit.UIColor {
     get
   }
   public var success: UIKit.UIColor {
@@ -217,16 +220,25 @@ extension Swift.String {
   public var brscan_documento_captura_verso_rg: Swift.String {
     get
   }
+  public var brscan_documento_captura_rg_aberto: Swift.String {
+    get
+  }
   public var brscan_documento_captura_frente_cnh: Swift.String {
     get
   }
   public var brscan_documento_captura_verso_cnh: Swift.String {
     get
   }
+  public var brscan_documento_captura_cnh_aberta: Swift.String {
+    get
+  }
   public var brscan_documento_captura_frente_documento: Swift.String {
     get
   }
   public var brscan_documento_captura_verso_documento: Swift.String {
+    get
+  }
+  public var brscan_documento_captura_documento_aberto: Swift.String {
     get
   }
   public var brscan_documento_erro_conexao: Swift.String {
@@ -345,8 +357,103 @@ extension UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @objc deinit
 }
+public enum Model : Swift.String {
+  case simulator
+  case iPod1
+  case iPod2
+  case iPod3
+  case iPod4
+  case iPod5
+  case iPod6
+  case iPod7
+  case iPad2
+  case iPad3
+  case iPad4
+  case iPadAir
+  case iPadAir2
+  case iPadAir3
+  case iPadAir4
+  case iPadAir5
+  case iPad5
+  case iPad6
+  case iPad7
+  case iPad8
+  case iPad9
+  case iPadMini
+  case iPadMini2
+  case iPadMini3
+  case iPadMini4
+  case iPadMini5
+  case iPadMini6
+  case iPadPro9_7
+  case iPadPro10_5
+  case iPadPro11
+  case iPadPro2_11
+  case iPadPro3_11
+  case iPadPro12_9
+  case iPadPro2_12_9
+  case iPadPro3_12_9
+  case iPadPro4_12_9
+  case iPadPro5_12_9
+  case iPhone4
+  case iPhone4S
+  case iPhone5
+  case iPhone5S
+  case iPhone5C
+  case iPhone6
+  case iPhone6Plus
+  case iPhone6S
+  case iPhone6SPlus
+  case iPhoneSE
+  case iPhone7
+  case iPhone7Plus
+  case iPhone8
+  case iPhone8Plus
+  case iPhoneX
+  case iPhoneXS
+  case iPhoneXSMax
+  case iPhoneXR
+  case iPhone11
+  case iPhone11Pro
+  case iPhone11ProMax
+  case iPhoneSE2
+  case iPhone12Mini
+  case iPhone12
+  case iPhone12Pro
+  case iPhone12ProMax
+  case iPhone13Mini
+  case iPhone13
+  case iPhone13Pro
+  case iPhone13ProMax
+  case iPhoneSE3
+  case AppleWatch1
+  case AppleWatchS1
+  case AppleWatchS2
+  case AppleWatchS3
+  case AppleWatchS4
+  case AppleWatchS5
+  case AppleWatchSE
+  case AppleWatchS6
+  case AppleWatchS7
+  case AppleTV1
+  case AppleTV2
+  case AppleTV3
+  case AppleTV4
+  case AppleTV_4K
+  case AppleTV2_4K
+  case unrecognized
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var type: brscan_sdk_documento_ios.Model {
+    get
+  }
+}
 extension UIKit.UIFont {
-  public static func loadFontWith(name: Swift.String)
   public static var loadFonts: ()
 }
 extension UIKit.UIFont {
