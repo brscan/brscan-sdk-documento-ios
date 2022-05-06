@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		93WdEfpZdzOvkbdqAKYWBIAJjGU=
+		O8P32P0HRyWD6fyKQKRBuE8Df0E=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/Info.plist</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		16TIo6NsoRoJ1gebhBfrV/EwRIU=
+		4tpCK01m/6Nk+rKp9lgaY4NcF24=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		16TIo6NsoRoJ1gebhBfrV/EwRIU=
+		4tpCK01m/6Nk+rKp9lgaY4NcF24=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/W2jpTGGCCt6Vcx+5z6EUGnVlN8=
+		G1gl2UApiBxxlwG2su2p/DP84QI=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/W2jpTGGCCt6Vcx+5z6EUGnVlN8=
+		G1gl2UApiBxxlwG2su2p/DP84QI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -257,14 +257,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mh8l6+7yxhJM1CKSo8SdCyfe7Qchoey0uwy6yZhOL5w=
+			bNn+kU8ukrvXQMpMl9CwmewAJexOXm/xsrjjd6VhOSw=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mh8l6+7yxhJM1CKSo8SdCyfe7Qchoey0uwy6yZhOL5w=
+			bNn+kU8ukrvXQMpMl9CwmewAJexOXm/xsrjjd6VhOSw=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -285,7 +285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cG/anQAbzY2VbMb9fiOiK8D+gEh6V4uI5Z0g8giIg4k=
+			20M4Q4R3yZeEqGaJnAaIa3frYtv7p23wrQu2AUzybso=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
@@ -306,7 +306,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cG/anQAbzY2VbMb9fiOiK8D+gEh6V4uI5Z0g8giIg4k=
+			20M4Q4R3yZeEqGaJnAaIa3frYtv7p23wrQu2AUzybso=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
