@@ -10,6 +10,7 @@ import MLKitVision
 import MobileCoreServices
 import Security
 import Swift
+import SystemConfiguration
 import UIKit
 import _Concurrency
 @_exported import brscan_sdk_documento_ios
@@ -185,6 +186,10 @@ extension UIKit.UIColor {
   public var brscan_documento_box_texto_orientacao: UIKit.UIColor {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class InternetConnectionManager {
+  public static func isConnectedToNetwork() -> Swift.Bool
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OvalGraficOverlayView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var shape: QuartzCore.CAShapeLayer

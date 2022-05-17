@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O8P32P0HRyWD6fyKQKRBuE8Df0E=
+		HSZrs/3pgfvOR5fpj0m73E861G4=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/Info.plist</key>
 		<data>
-		vhkQlAxfhnklf3FOdI0U/PN4LsY=
+		G332Jgde67EoMAJxpRInhNyIG5w=
 		</data>
 		<key>MLKitObjectDetectionCommonResources.bundle/mobile_object_localizer_3_1_anchors.pb</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>MLKitObjectDetectionResources.bundle/Info.plist</key>
 		<data>
-		0uJ7FEi7LqkMOuszMuem0KG5uqs=
+		6d8WWY/IdyW8Am1Jgkh3DecMZoE=
 		</data>
 		<key>MLKitObjectDetectionResources.bundle/mobile_object_classifier_v0_2_3_with_metadata.tflite</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		jrnQtnIYGJIQo3JH8Trsb+WB4dk=
+		P7tg6Zf2luyFD3fGod9J/mzo3nk=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		jrnQtnIYGJIQo3JH8Trsb+WB4dk=
+		P7tg6Zf2luyFD3fGod9J/mzo3nk=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		IqYzA+iyai6hEUVlTzH9LD0ruzc=
+		eSPJRI1NA+OuMvrLs9Hm6tE3+7w=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kvc9oPGg24BFJZoGuVjsbNen/hk=
+		Tl8w9CGsC9bIrcentDsB8tHRiEg=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		IqYzA+iyai6hEUVlTzH9LD0ruzc=
+		eSPJRI1NA+OuMvrLs9Hm6tE3+7w=
 		</data>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kvc9oPGg24BFJZoGuVjsbNen/hk=
+		Tl8w9CGsC9bIrcentDsB8tHRiEg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i/3aRVtmraoncQGorhHZI8IOefje8lYHqbOLbirG0i4=
+			rlkNwQBCubA5LUHqsQ2kOm7TiA78VNO3OAmN2IrvlyE=
 			</data>
 		</dict>
 		<key>MLKitObjectDetectionCommonResources.bundle/mobile_object_localizer_3_1_anchors.pb</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j7qkuSJpCBHOmyVcgVGOR6mVMcyO1v5e9PCCM5tyHWk=
+			+9o89u0GauxjqZYD6KUdSplWla6fCk//+qhIXoYIraM=
 			</data>
 		</dict>
 		<key>MLKitObjectDetectionResources.bundle/mobile_object_classifier_v0_2_3_with_metadata.tflite</key>
@@ -257,14 +257,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4TGn8ZXUn9Y8JoRvbFnHu1hkn7SQUxS99DMh7AE8Qg=
+			4VxjKSRIhLJbf89vNRrkmXIzCnzS87Z/NSqLbsZusnM=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4TGn8ZXUn9Y8JoRvbFnHu1hkn7SQUxS99DMh7AE8Qg=
+			4VxjKSRIhLJbf89vNRrkmXIzCnzS87Z/NSqLbsZusnM=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -278,14 +278,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7g7q6HpMjf18c+Wi+N/zmSDBf/ZkG6+lKFpuZNle/w=
+			rIKlLrjg7mjF4YVxAeRzoyyeE9cntyt8VjeQFD6EgPk=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OD+Bx4I65ZGhHfQa7hwElty3UzGPUqrGaNfdNWVDbRo=
+			cciIH01+UycXvrC/xroG5DOAJ1SGLHoeYb/mv/ZkJk4=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftdoc</key>
@@ -299,14 +299,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7g7q6HpMjf18c+Wi+N/zmSDBf/ZkG6+lKFpuZNle/w=
+			rIKlLrjg7mjF4YVxAeRzoyyeE9cntyt8VjeQFD6EgPk=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_documento_ios.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OD+Bx4I65ZGhHfQa7hwElty3UzGPUqrGaNfdNWVDbRo=
+			cciIH01+UycXvrC/xroG5DOAJ1SGLHoeYb/mv/ZkJk4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
