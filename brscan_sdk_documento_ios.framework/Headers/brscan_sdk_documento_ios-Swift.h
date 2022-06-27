@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import AVFoundation;
 @import CoreGraphics;
+@import CoreLocation;
 @import CoreMedia;
 @import Foundation;
 @import ObjectiveC;
@@ -226,7 +227,16 @@ SWIFT_CLASS("_TtC24brscan_sdk_documento_ios30CapturaDocumentoViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+@class CLLocationManager;
+@class CLLocation;
+
+@interface CapturaDocumentoViewController (SWIFT_EXTENSION(brscan_sdk_documento_ios)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
 @end
 
 

@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name brscan_sdk_documento_ios
 import AVFoundation
 import CommonCrypto
+import CoreLocation
 import CoreVideo
 import Foundation
 import MLKitObjectDetection
@@ -104,6 +105,7 @@ public protocol CapturaDocumentoViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func startSession()
   @_Concurrency.MainActor(unsafe) public func stopSession()
   @_Concurrency.MainActor(unsafe) public func addLayoutSubviews()
@@ -112,6 +114,10 @@ public protocol CapturaDocumentoViewControllerDelegate {
 }
 extension brscan_sdk_documento_ios.CapturaDocumentoViewController : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+extension brscan_sdk_documento_ios.CapturaDocumentoViewController : CoreLocation.CLLocationManagerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
 }
 @_hasMissingDesignatedInitializers final public class CameraCaptureHandler {
   @objc deinit
@@ -371,6 +377,367 @@ extension UIKit.UIButton {
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @objc deinit
+}
+public enum Device {
+  case iPodTouch5
+  case iPodTouch6
+  case iPodTouch7
+  case iPhone4
+  case iPhone4s
+  case iPhone5
+  case iPhone5c
+  case iPhone5s
+  case iPhone6
+  case iPhone6Plus
+  case iPhone6s
+  case iPhone6sPlus
+  case iPhone7
+  case iPhone7Plus
+  case iPhoneSE
+  case iPhone8
+  case iPhone8Plus
+  case iPhoneX
+  case iPhoneXS
+  case iPhoneXSMax
+  case iPhoneXR
+  case iPhone11
+  case iPhone11Pro
+  case iPhone11ProMax
+  case iPhoneSE2
+  case iPhone12
+  case iPhone12Mini
+  case iPhone12Pro
+  case iPhone12ProMax
+  case iPhone13
+  case iPhone13Mini
+  case iPhone13Pro
+  case iPhone13ProMax
+  case iPhoneSE3
+  case iPad2
+  case iPad3
+  case iPad4
+  case iPadAir
+  case iPadAir2
+  case iPad5
+  case iPad6
+  case iPadAir3
+  case iPad7
+  case iPad8
+  case iPad9
+  case iPadAir4
+  case iPadAir5
+  case iPadMini
+  case iPadMini2
+  case iPadMini3
+  case iPadMini4
+  case iPadMini5
+  case iPadMini6
+  case iPadPro9Inch
+  case iPadPro12Inch
+  case iPadPro12Inch2
+  case iPadPro10Inch
+  case iPadPro11Inch
+  case iPadPro12Inch3
+  case iPadPro11Inch2
+  case iPadPro12Inch4
+  case iPadPro11Inch3
+  case iPadPro12Inch5
+  case homePod
+  indirect case simulator(brscan_sdk_documento_ios.Device)
+  case unknown(Swift.String)
+  public static var current: brscan_sdk_documento_ios.Device {
+    get
+  }
+  public static var identifier: Swift.String
+  public static func mapToDevice(identifier: Swift.String) -> brscan_sdk_documento_ios.Device
+  public static func realDevice(from device: brscan_sdk_documento_ios.Device) -> brscan_sdk_documento_ios.Device
+  public var diagonal: Swift.Double {
+    get
+  }
+  public var screenRatio: (width: Swift.Double, height: Swift.Double) {
+    get
+  }
+  public static var allPods: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allPhones: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allPads: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  @available(*, deprecated, renamed: "allDevicesWithSensorHousing")
+  public static var allXSeriesDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allPlusSizedDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allProDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allMiniDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorPods: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorPhones: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorPads: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorMiniDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  @available(*, deprecated, renamed: "allSimulatorDevicesWithSensorHousing")
+  public static var allSimulatorXSeriesDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorPlusSizedDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorProDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var isPod: Swift.Bool {
+    get
+  }
+  public var isPhone: Swift.Bool {
+    get
+  }
+  public var isPad: Swift.Bool {
+    get
+  }
+  public var isSimulator: Swift.Bool {
+    get
+  }
+  public var realDevice: brscan_sdk_documento_ios.Device {
+    get
+  }
+  public var isZoomed: Swift.Bool? {
+    get
+  }
+  public static var allTouchIDCapableDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allFaceIDCapableDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allBiometricAuthenticationCapableDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var isTouchIDCapable: Swift.Bool {
+    get
+  }
+  public var isFaceIDCapable: Swift.Bool {
+    get
+  }
+  public var hasBiometricSensor: Swift.Bool {
+    get
+  }
+  public static var allDevicesWithSensorHousing: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulatorDevicesWithSensorHousing: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var hasSensorHousing: Swift.Bool {
+    get
+  }
+  public static var allDevicesWithRoundedDisplayCorners: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var hasRoundedDisplayCorners: Swift.Bool {
+    get
+  }
+  public static var allDevicesWith3dTouchSupport: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var has3dTouchSupport: Swift.Bool {
+    get
+  }
+  public static var allDevicesWithWirelessChargingSupport: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var supportsWirelessCharging: Swift.Bool {
+    get
+  }
+  public static var allDevicesWithALidarSensor: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var hasLidarSensor: Swift.Bool {
+    get
+  }
+  public static var allRealDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allSimulators: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public func isOneOf(_ devices: [brscan_sdk_documento_ios.Device]) -> Swift.Bool
+  public var name: Swift.String? {
+    get
+  }
+  public var systemName: Swift.String? {
+    get
+  }
+  public var systemVersion: Swift.String? {
+    get
+  }
+  public var model: Swift.String? {
+    get
+  }
+  public var localizedModel: Swift.String? {
+    get
+  }
+  public var ppi: Swift.Int? {
+    get
+  }
+  public var isGuidedAccessSessionActive: Swift.Bool {
+    get
+  }
+  public var screenBrightness: Swift.Int {
+    get
+  }
+}
+extension brscan_sdk_documento_ios.Device : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var safeDescription: Swift.String {
+    get
+  }
+}
+extension brscan_sdk_documento_ios.Device : Swift.Equatable {
+  public static func == (lhs: brscan_sdk_documento_ios.Device, rhs: brscan_sdk_documento_ios.Device) -> Swift.Bool
+}
+@available(iOS 8.0, watchOS 4.0, *)
+extension brscan_sdk_documento_ios.Device {
+  public enum BatteryState : Swift.CustomStringConvertible, Swift.Equatable {
+    case full
+    case charging(Swift.Int)
+    case unplugged(Swift.Int)
+    public var lowPowerMode: Swift.Bool {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+  }
+  public var batteryState: brscan_sdk_documento_ios.Device.BatteryState? {
+    get
+  }
+  public var batteryLevel: Swift.Int? {
+    get
+  }
+}
+@available(iOS 8.0, watchOS 4.0, *)
+extension brscan_sdk_documento_ios.Device.BatteryState : Swift.Comparable {
+  public static func == (lhs: brscan_sdk_documento_ios.Device.BatteryState, rhs: brscan_sdk_documento_ios.Device.BatteryState) -> Swift.Bool
+  public static func < (lhs: brscan_sdk_documento_ios.Device.BatteryState, rhs: brscan_sdk_documento_ios.Device.BatteryState) -> Swift.Bool
+}
+extension brscan_sdk_documento_ios.Device {
+  public enum Orientation {
+    case landscape
+    case portrait
+    public static func == (a: brscan_sdk_documento_ios.Device.Orientation, b: brscan_sdk_documento_ios.Device.Orientation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var orientation: brscan_sdk_documento_ios.Device.Orientation {
+    get
+  }
+}
+extension brscan_sdk_documento_ios.Device {
+  public static var volumeTotalCapacity: Swift.Int? {
+    get
+  }
+  public static var volumeAvailableCapacity: Swift.Int? {
+    get
+  }
+  @available(iOS 11.0, *)
+  public static var volumeAvailableCapacityForImportantUsage: Swift.Int64? {
+    get
+  }
+  @available(iOS 11.0, *)
+  public static var volumeAvailableCapacityForOpportunisticUsage: Swift.Int64? {
+    get
+  }
+  @available(iOS 11.0, *)
+  public static var volumes: [Foundation.URLResourceKey : Swift.Int64]? {
+    get
+  }
+}
+extension brscan_sdk_documento_ios.Device {
+  public struct ApplePencilSupport : Swift.OptionSet {
+    public var rawValue: Swift.UInt
+    public init(rawValue: Swift.UInt)
+    public static var firstGeneration: brscan_sdk_documento_ios.Device.ApplePencilSupport
+    public static var secondGeneration: brscan_sdk_documento_ios.Device.ApplePencilSupport
+    public typealias ArrayLiteralElement = brscan_sdk_documento_ios.Device.ApplePencilSupport
+    public typealias Element = brscan_sdk_documento_ios.Device.ApplePencilSupport
+    public typealias RawValue = Swift.UInt
+  }
+  public static var allApplePencilCapableDevices: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var applePencilSupport: brscan_sdk_documento_ios.Device.ApplePencilSupport {
+    get
+  }
+}
+extension brscan_sdk_documento_ios.Device {
+  public enum CameraType {
+    @available(*, deprecated, renamed: "wide")
+    case normal
+    case selfie
+    case wide
+    case telephoto
+    case ultraWide
+    public static func == (a: brscan_sdk_documento_ios.Device.CameraType, b: brscan_sdk_documento_ios.Device.CameraType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var cameras: [brscan_sdk_documento_ios.Device.CameraType] {
+    get
+  }
+  public static var allDevicesWithCamera: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  @available(*, deprecated, renamed: "allDevicesWithWideCamera")
+  public static var allDevicesWithNormalCamera: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allDevicesWithWideCamera: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allDevicesWithTelephotoCamera: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public static var allDevicesWithUltraWideCamera: [brscan_sdk_documento_ios.Device] {
+    get
+  }
+  public var hasCamera: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, renamed: "hasWideCamera")
+  public var hasNormalCamera: Swift.Bool {
+    get
+  }
+  public var hasWideCamera: Swift.Bool {
+    get
+  }
+  public var hasTelephotoCamera: Swift.Bool {
+    get
+  }
+  public var hasUltraWideCamera: Swift.Bool {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class ReadableMapDocumentoConfiguracaoTexto {
   public static var shared: brscan_sdk_documento_ios.ReadableMapDocumentoConfiguracaoTexto
