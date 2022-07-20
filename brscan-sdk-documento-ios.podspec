@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'brscan-sdk-documento-ios'
-    s.version           = '1.7.0'
+    s.version           = '1.7.1'
     s.summary           = 'Framework em IOS para captura de documento.'
     s.homepage          = 'https://github.com/brscan/brscan-sdk-documento-ios'
 
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 	
-    s.dependency 'GoogleMLKit/ObjectDetection'
+    s.dependency 'GoogleMLKit/ObjectDetection','2.6.0'
 end 

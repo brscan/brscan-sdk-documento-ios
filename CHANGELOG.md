@@ -1,3 +1,6 @@
+## [1.7.1] - 20-07-2022
+- Correção(hotfix): Atualizar MLKit para versão 2.6.0.
+
 ## [1.7.0] - 11-07-2022
 - Melhoria: Retornar erros via call back(erroCallbackListener).
 - Melhoria: Alterar o tamanho da imagem para envio ao type document.
