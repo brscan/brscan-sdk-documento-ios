@@ -1,3 +1,18 @@
+## [1.8.0] - 27-07-2022
+- Melhoria: Alteraçõa de nomenclarura (erroCallbackListener) para (documentCallbackListener)
+- Melhoria: Retornar erros e sucesso via call back (documentCallbackListener)
+- Melhoria: Adicionado tipoDeCaptura no retorno do documentCallbackListener
+- Melhoria: flag (capturaManual) para habilitar processo de captura manual.
+- Melhoria: flag (orientacaoCaptura) para habilitar a mudança na orientação do layout de captura entre a forma "portrait" e "landscape"
+- Melhoria: Alteraçõa de nomenclarura da cores (brscan_background_captura, brscan_default_captura e brscan_highlight_captura) por (brscan_documento_background_captura, brscan_documento_default_captura e brscan_documento_highlight_captura) respectivamente.
+- Melhoria: Alteraçõa de cores padrão (
+    brscan_documento_highlight_captura = #00AF7D,
+    brscan_documento_default_captura = #FFFFFF,
+    brscan_documento_background_captura = #B2000000,
+    brscan_documento_icone_captura_botao_fechar = #FFFFFF e
+    brscan_documento_box_texto_orientacao = #00000000)
+- Melhoria: Alteraçõa do tamanho da fonte de brscan_documento_tamanho_texto_orientacao para 16px
+
 ## [1.7.1] - 20-07-2022
 - Correção(hotfix): Atualizar MLKit para versão 2.6.0.
 

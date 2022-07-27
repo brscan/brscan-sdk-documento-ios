@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'brscan-sdk-documento-ios'
-    s.version           = '1.7.1'
+    s.version           = '1.8.0'
     s.summary           = 'Framework em IOS para captura de documento.'
     s.homepage          = 'https://github.com/brscan/brscan-sdk-documento-ios'
 
